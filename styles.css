@@ -1,44 +1,51 @@
-div:hover {
-    background-color: aqua;
-    color: black;
-}
-
 * {
     box-sizing: border-box;
 }
-
 body {
     display: flex;
     min-height: 100vh;
-    background-color: bisque;
+    background-color: lightgray;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.BTN {
+.btn {
     font-size: 2rem;
     outline: none;
     border: none;
     border-radius: .5rem;
     padding: 1rem;
-    background-color: brown;
+    background-color: #2C7DFA;
     cursor: pointer;
 }
 
-.BTN-hide {
-    opacity: .7;
+.btn-hide {
+    opacity: .7%;
+    transition: opacity 500ms ease-out;
 }
 
-.BTN-hide:hover {
+.btn-hide:hover {
     opacity: 1;
 }
 
-.BTN-hide:focus {
+.btn-hide:focus {
     opacity: 0;
 }
 
-.BTN-change {
-    transition: color, background-color, padding;
+.btn-change {
+    transition: color, background-color;
+    transition-duration: 500ms;
+
+}
+
+.btn-change:focus {
+    color: #bada55;
+    background-color: #C0FFEE;
+}
+
+.btn-change:hover {
+    color: #bada55;
+    background-color: #C0FFEE;
 }
