@@ -1,0 +1,44 @@
+div:hover {
+    background-color: aqua;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: bisque;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.BTN {
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.BTN-hide {
+    opacity: .7;
+}
+
+.BTN-hide:hover {
+    opacity: 1;
+}
+
+.BTN-hide:focus {
+    opacity: 0;
+}
+
+.BTN-change {
+    transition: color, background-color, padding;
+}
